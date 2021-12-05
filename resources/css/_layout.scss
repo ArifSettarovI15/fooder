@@ -1,0 +1,11 @@
+body{
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    background: $color__dark--2;
+}
+.wrapper_main{
+    height: 100vh;
+}

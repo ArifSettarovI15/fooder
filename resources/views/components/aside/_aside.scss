@@ -1,0 +1,72 @@
+.aside_wrapper {
+    background: $color__dark--1;
+    display: flex;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.aside_content {
+    display: flex;
+
+    padding: 24px 0 0 12px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside_logo {
+    cursor: pointer;
+    margin-left: 12px;
+    margin-right: 24px;
+    background: rgba(#EB966A, 0.26);
+    border-radius: 12px;
+    padding: 8px;
+    margin-bottom: 26px;
+}
+.aside_item {
+    $root: &;
+    cursor: pointer;
+    padding: 13px 24px 13px 12px;
+    border-radius: 12px 0px 0px 12px;
+    margin-bottom: 22px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &_icon {
+        padding: 16px;
+        border-radius: 8px;
+        transition: background-color .3s ease-in-out;
+        svg *{
+            transition: all .3s ease-in-out;
+        }
+    }
+    &:hover{
+        #{$root}_icon {
+            background-color: #EA7C69;
+            svg * {
+                fill: #fff;
+            }
+        }
+    }
+    &_active {
+        background: #2D303E;
+
+        #{$root}_icon {
+            background: #EA7C69;
+            box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+        }
+
+        &:before {
+            content: url(/images/svg/aside_link_before.svg);
+            position: absolute;
+            top: -12px;
+            right: 0;
+        }
+
+        &:after {
+            content: url(/images/svg/aside_link_after.svg);
+            position: absolute;
+            bottom: -12px;
+            right: 0;
+        }
+    }
+
+}
