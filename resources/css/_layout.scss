@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
 body{
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
     backface-visibility: hidden;
     position: relative;
-    background: $color__dark--2;
+    background: $color__dark--1;
 }
+
 .wrapper_main{
+    display: flex;
     height: 100vh;
+}
+.wrapper_right{
+    width: 100%;
+}
+.page_content_wrapper{
+    padding: 24px;
 }

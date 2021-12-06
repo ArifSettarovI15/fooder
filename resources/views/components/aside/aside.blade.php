@@ -3,45 +3,47 @@
         <div class="aside_items">
 
             <div class="aside_logo">
-                @svg('logo', 40, 40)
+                <x-svg name="logo" width="40"/>
+
             </div>
             <div class="aside_item aside_item_active">
                 <div class="aside_item_icon">
-                    @svg('home', 24)
+                    <x-svg name="home" width="24"/>
                 </div>
             </div>
             <div class="aside_item">
                 <div class="aside_item_icon">
-                    @svg('Discount', 24)
-                </div>
-
-            </div>
-            <div class="aside_item">
-                <div class="aside_item_icon">
-                    @svg('dashboard', 24)
-                </div>
-            </div>
-            <div class="aside_item">
-                <div class="aside_item_icon">
-                    @svg('Message', 24)
+                    <x-svg name="Discount" width="24"/>
                 </div>
 
             </div>
             <div class="aside_item">
                 <div class="aside_item_icon">
-                    @svg('Notification', 24)
+                    <x-svg name="dashboard" width="24"/>
                 </div>
             </div>
             <div class="aside_item">
                 <div class="aside_item_icon">
-                    @svg('setting', 24)
+                    <x-svg name="Message" width="24"/>
+                </div>
+
+            </div>
+            <div class="aside_item">
+                <div class="aside_item_icon">
+{{--                    <x-svg name="Notification" width="24"/>--}}
+                    @svg('notification', 24,24)
+                </div>
+            </div>
+            <div class="aside_item">
+                <div class="aside_item_icon">
+                    <x-svg name="setting" width="24"/>
                 </div>
             </div>
         </div>
 
         <div class="aside_item">
             <div class="aside_item_icon">
-                @svg('Logout', 24)
+                <x-svg name="Logout" width="24"/>
             </div>
         </div>
     </div>

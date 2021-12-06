@@ -1,0 +1,28 @@
+.filter_item{
+    $root: &;
+    &_title{
+        cursor: pointer;
+        font-family: $font-family_main;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        color: $color__light;
+    }
+    &_active{
+        #{$root}_title{
+            color: $color__primary--1
+        }
+    }
+    &_active:after{
+        content: '';
+        position: absolute;
+        bottom: -13px;
+        width: 50%;
+        border-radius: 6px;
+        background: #EA7C69;
+        z-index: 1;
+        border: 3px solid #EA7C69;
+    }
+
+}

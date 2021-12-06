@@ -1,0 +1,50 @@
+.top_panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_title {
+        font-family: $font-family_main;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+
+    &_date {
+        font-family: $font-family_main;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        color: #E0E6E9;
+    }
+
+    &_search {
+        &_icon{
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
+        &_input {
+            width: 220px;
+            padding-left: 42px;
+            height: 48px;
+            background: $color__dark--2;
+            border: 1px solid $color__dark--3;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-family: $font-family_main;
+            font-size: 14px;
+            line-height: 140%;
+            color: $color__light--1;
+            &::placeholder {
+                font-family: $font-family_main;
+                font-size: 14px;
+                line-height: 140%;
+                color: $color__light--1;
+            }
+        }
+    }
+}

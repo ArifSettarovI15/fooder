@@ -1,5 +1,6 @@
+
 .aside_wrapper {
-    background: $color__dark--1;
+    background: $color__dark--4;
     display: flex;
     height: 100%;
     border-radius: 16px;
@@ -31,6 +32,7 @@
         margin-bottom: 0;
     }
     &_icon {
+        width: 56px;
         padding: 16px;
         border-radius: 8px;
         transition: background-color .3s ease-in-out;
@@ -40,17 +42,17 @@
     }
     &:hover{
         #{$root}_icon {
-            background-color: #EA7C69;
+            background-color: $color__primary--1;
             svg * {
                 fill: #fff;
             }
         }
     }
     &_active {
-        background: #2D303E;
+        background: $color__dark--1;
 
         #{$root}_icon {
-            background: #EA7C69;
+            background: $color__primary--1;
             box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
         }
 

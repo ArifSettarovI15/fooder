@@ -1,6 +1,11 @@
 
+@import './plugins';
 @import './variables';
 @import './reset';
 @import 'layout';
+@import './elements';
 @import './resources/views/components/aside/aside';
-
+@import "./resources/views/components/main_top/_main_top.scss";
+@import "./resources/views/components/filters/_filters.scss";
+@import "./resources/views/components/filter_item/_filter_item.scss";
+@import "./resources/views/components/products_table/_products_table.scss";

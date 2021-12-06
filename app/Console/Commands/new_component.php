@@ -57,7 +57,7 @@ class new_component extends Command
             fclose($file);
             $assets = base_path().'/resources/';
             $css = fopen($assets.'/css/app.scss', 'a+');
-            fwrite($css, '@import "'.$scss_filename.'");');
+            fwrite($css, '@import "'.$scss_filename.'";\n');
             fclose($css);
             $js = fopen($assets.'/js/app.js', 'a+');
             fwrite($js, 'require ("'.$js_filename.'");');
